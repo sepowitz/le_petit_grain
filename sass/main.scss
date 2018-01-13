@@ -1,3 +1,4 @@
+
 html {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
@@ -5,12 +6,8 @@ html {
 
 *, *:before, *:after {
   box-sizing: inherit;
-  margin: 0;
-  padding: 0;
+  margin:0;
+  padding:0;
 }
 
-body {
-  color: red;
-}
-
-/*# sourceMappingURL=main.css.map */
+@import 'home';
