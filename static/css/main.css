@@ -1,3 +1,7 @@
+html, body {
+  height: 100%;
+}
+
 html {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
@@ -7,6 +11,70 @@ html {
   box-sizing: inherit;
   margin: 0;
   padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Colors */
+/* Color maps */
+.beige {
+  color: #E2E1DB;
+}
+
+.bg-beige {
+  background-color: #E2E1DB;
+}
+
+.border-beige {
+  border-color: #E2E1DB;
+}
+
+.stroke-beige {
+  stroke: #E2E1DB;
+}
+
+.blue {
+  color: #273248;
+}
+
+.bg-blue {
+  background-color: #273248;
+}
+
+.border-blue {
+  border-color: #273248;
+}
+
+.stroke-blue {
+  stroke: #273248;
+}
+
+#home {
+  height: 100%;
+  background: #E2E1DB;
+}
+#home .content {
+  text-align: center;
+  text-transform: uppercase;
+}
+#home img {
+  width: 100%;
+  max-width: 340px;
+}
+#home h1 {
+  font-size: 30px;
+  letter-spacing: 0.3px;
+}
+#home h2 {
+  font-size: 19px;
+  letter-spacing: 0.67px;
+}
+#home h3 {
+  font-size: 15px;
+  letter-spacing: 0.79px;
 }
 
 /*# sourceMappingURL=main.css.map */

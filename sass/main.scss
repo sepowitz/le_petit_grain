@@ -1,11 +1,10 @@
+//Global
+@import 'global';
 
-html {
-  box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
-}
+// Utils
+@import 'breakpoints';
+@import 'colors';
+@import 'type';
 
-*, *:before, *:after {
-  box-sizing: inherit;
-  margin:0;
-  padding:0;
-}
+// Pages
+@import 'pages/home';

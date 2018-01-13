@@ -1,0 +1,29 @@
+#home {
+  height: 100%;
+  background: color('beige');
+
+  .content {
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  img {
+    width: 100%;
+    max-width: 340px;
+  }
+
+  h1 {
+    font-size: 30px;
+    letter-spacing: 0.3px;
+  }
+
+  h2 {
+    font-size: 19px;
+    letter-spacing: 0.67px;
+  }
+
+  h3 {
+    font-size: 15px;
+    letter-spacing: 0.79px;
+  }
+}
