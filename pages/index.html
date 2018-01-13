@@ -1,41 +1,56 @@
 {# ------------------------------------------------------- #}
-
-{# YOUR HOMEPAGE #}
-
+{# ONE OFF VIEW homepage #}
+{# This page can use any data from http:localhost:2000/cms/#/form/homepage/ #}
 {# Webhook uses the SWIG.js (like Djagno/Twig) templating system. Their documentation is here: #}
 {# http://paularmstrong.github.io/swig/docs/tags/ #}
-
 {# Learn about calling data into Webhook pages here: #}
 {# http://www.webhook.com/docs/template-rules-and-filters/ #}
-
 {# ------------------------------------------------------- #}
-
 {# Confused what extends and blocks do? Watch a primer: #}
 {# http://www.webhook.com/docs/template-inheritance-blocks/ #}
 {% extends "templates/partials/base.html" %}
-
-{# This sets our page <title>. It will append "- Homepage" to the site title defined in base. #}
-{% block title %}{% parent %} - Homepage{% endblock %}
-
+{# This sets our page <title>. It will append this homepage's name to the site title defined in base.html #}
+{% block title %}{% parent %} - {{ cms.homepage.name }}{% endblock %}
 {% block content %}
-
-  <h1>Hello world!</h1>
-
-  <p>This is your homepage, located at /pages/index.html.</p>
-
-  <p><a href="/cms/">Looking for the CMS?</a></p>
-
-  {# If you have at least content page type, we show a list. #}
-  {% if cms_types|size !== 0 %}
-
-    <h3>Content types you've created in the CMS so far.</h3>
-
-    <ul>
-    {% for type in cms_types %}
-      <li><a href="{{ url(type) }}">{{ type.name }}</a></li>
-    {% endfor %}
-    </ul>
-
-  {% endif %}
-
+  <h1>{{ cms.homepage.name }}</h1>
+  <ul>
+      <li>
+        <strong>Name: </strong>
+        {{ cms.homepage.name }}
+      </li>
+      <li>
+        <strong>Create Date: </strong>
+        {# Format the date. You can use PHP's date function to format as needed. http://php.net/manual/en/function.date.php #}
+        {{ cms.homepage.create_date|date('F d Y') }}
+      </li>
+      <li>
+        <strong>Last Updated: </strong>
+        {# Format the date. You can use PHP's date function to format as needed. http://php.net/manual/en/function.date.php #}
+        {{ cms.homepage.last_updated|date('F d Y') }}
+      </li>
+      <li>
+        <strong>Title: </strong>
+        {{ cms.homepage.title }}
+      </li>
+      <li>
+        <strong>Email: </strong>
+        {{ cms.homepage.email }}
+      </li>
+      <li>
+        <strong>Address: </strong>
+        <address>
+          {{ cms.homepage.address.street1 }}<br/>
+          {% if cms.homepage.address.street2 %}{{ cms.homepage.address.street2 }}<br/>{% endif %}
+          {{ cms.homepage.address.city }}, {{ cms.homepage.address.state }}. {{ cms.homepage.address.country }} {{ cms.homepage.address.zip }}
+        </address>
+      </li>
+      <li>
+        <strong>Status: </strong>
+        {{ cms.homepage.status }}
+      </li>
+      <li>
+        <strong>Instagram Link: </strong>
+        {{ cms.homepage.instagram_link }}
+      </li>
+  </ul>
 {% endblock %}
