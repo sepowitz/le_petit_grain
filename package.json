@@ -44,5 +44,12 @@
     "grunt-connect-proxy": "~0.2",
     "nodejs-websocket": "~1.2.0",
     "grunt-simple-watch": "~0.1.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babelify": "^8.0.0",
+    "grunt-browserify": "^5.2.0",
+    "grunt-contrib-sass": "^1.0.0"
   }
 }
