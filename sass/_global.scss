@@ -1,5 +1,7 @@
 html, body {
   height: 100%;
+  background-color: #E2E1DB;
+  font-family: 'Lasiver', sans-serif;
 }
 
 html {
@@ -16,4 +18,8 @@ html {
 h1, h2, h3, h4, h5, h6, p {
   margin: 0;
   padding: 0;
+}
+
+a {
+  text-decoration: none;
 }

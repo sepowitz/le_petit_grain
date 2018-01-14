@@ -1,0 +1,14 @@
+$sm: 36em;
+$md: 52em;
+$lg: 60em;
+
+$breakpoints: (
+  'sm': $sm,
+  'md': $md,
+  'lg': $lg,
+);
+
+// Breakpoints settings
+$sm-up: "(min-width: #{$sm})";
+$md-up: "(min-width: #{$md})";
+$lg-up: "(min-width: #{$lg})";
