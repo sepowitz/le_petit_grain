@@ -1,0 +1,17 @@
+// Spacing Settings
+$spacesize: 5;
+
+// Grid Columns
+@for $i from 1 through $spacesize {
+  .m#{$i}   { margin: #{$i}rem; }
+  .mt#{$i}  { margin-top: #{$i}rem; }
+  .mb#{$i}  { margin-right: #{$i}rem; }
+  .mb#{$i}  { margin-bottom: #{$i}rem; }
+  .ml#{$i}  { margin-left: #{$i}rem; }
+
+  .p#{$i}   { padding: #{$i}rem; }
+  .pt#{$i}  { padding-top: #{$i}rem; }
+  .pb#{$i}  { padding-right: #{$i}rem; }
+  .pb#{$i}  { padding-bottom: #{$i}rem; }
+  .pl#{$i}  { padding-left: #{$i}rem; }
+}

@@ -1,13 +1,12 @@
+//Global
+@import 'global';
 
-html {
-  box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
-}
+// Utils
+@import 'breakpoints';
+@import 'colors';
+@import 'type';
+@import 'grid';
+@import 'utils';
 
-*, *:before, *:after {
-  box-sizing: inherit;
-  margin:0;
-  padding:0;
-}
-
-@import 'home';
+// Pages
+@import 'pages/home';
