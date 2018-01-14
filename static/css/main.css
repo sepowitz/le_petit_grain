@@ -275,15 +275,14 @@ a {
   padding: 4rem 0;
   text-align: center;
   text-transform: uppercase;
+  transition: 1.5s ease-in-out;
+  opacity: 0;
+}
+#home .content.js-reveal {
+  opacity: 1;
 }
 #home .title-wrapper {
   margin-bottom: 2rem;
-  text-align: left;
-}
-@media (min-width: 36em) {
-  #home .title-wrapper {
-    text-align: center;
-  }
 }
 #home .icons-wrapper {
   margin-bottom: 2rem;
@@ -306,7 +305,6 @@ a {
 }
 @media (min-width: 52em) {
   #home h1 {
-    transform: translateX(-5%);
     font-size: 50px;
   }
 }

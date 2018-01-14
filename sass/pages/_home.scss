@@ -6,14 +6,16 @@
     padding: 4rem 0;
     text-align: center;
     text-transform: uppercase;
+    transition: 1.5s ease-in-out;
+    opacity: 0;
+
+    &.js-reveal {
+      opacity: 1;
+    }
   }
 
   .title-wrapper {
     margin-bottom: 2rem;
-    text-align: left;
-    @media #{$sm-up} {
-      text-align: center;
-    }
   }
 
   .icons-wrapper {
@@ -39,7 +41,6 @@
     font-size: 30px;
     letter-spacing: 0.3px;
     @media #{$md-up} {
-      transform: translateX(-5%);
       font-size: 50px;
     }
   }
