@@ -1,10 +1,11 @@
-if ( !!(window.addEventListener) )
-  window.addEventListener("DOMContentLoaded", () => execute())
-else // MSIE
-  window.attachEvent("onload", execute)
+if ( !!(window.addEventListener)) {
+  window.addEventListener("DOMContentLoaded", () => fadeIn());
+} else { //IE
+  window.attachEvent("onload", () => fadeIn());
+}
 
-  const execute = () => {
-    const content = document.getElementsByClassName('content');
-    if (!content.length) return;
-    return content[0].classList.add('js-reveal');
-  }
+const fadeIn = () => {
+  const content = document.getElementsByClassName('content');
+  if (!content.length) return;
+  return content[0].classList.add('js-reveal');
+}
