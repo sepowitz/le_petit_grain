@@ -1,9 +1,38 @@
-.lasiver { 
-  font-family: 'Lasiver', sans-serif;
-  font-weight: 300;
+@font-face {
+  font-family: "Futura BT Heavy";
+	src: url("/static/fonts/FuturaBT-Heavy.eot?") format("eot"),
+	     url("/static/fonts/FuturaBT-Heavy.woff") format("woff"),
+	     url("/static/fonts/FuturaBT-Heavy.ttf") format("truetype"),
+	     url("/static/fonts/FuturaBT-Heavy.svg") format("svg");
 }
 
-.futura { 
-  font-family: 'futura', sans-serif;
-  font-weight: 800;
+@font-face {
+  font-family: "Playfair Display Bold";
+	src: url("/static/fonts/PlayfairDisplay-Bold.eot?") format("eot"),
+	     url("/static/fonts/PlayfairDisplay-Bold.woff") format("woff"),
+	     url("/static/fonts/PlayfairDisplay-Bold.ttf") format("truetype"),
+	     url("/static/fonts/PlayfairDisplay-Bold.svg") format("svg");
+}
+
+@font-face {
+  font-family: "Futura BT Medium";
+	src: url("/static/fonts/FuturaBT-Medium.eot?") format("eot"),
+	     url("/static/fonts/FuturaBT-Medium.woff") format("woff"),
+	     url("/static/fonts/FuturaBT-Medium.ttf") format("truetype"),
+	     url("/static/fonts/FuturaBT-Medium.svg") format("svg");
+}
+
+.serif-bold {
+  font-family: 'Playfair Display Bold', serif;
+  font-weight: normal;
+}
+
+.sans-medium {
+  font-family: 'Futura BT Medium', serif;
+  font-weight: normal;
+}
+
+.sans-bold {
+  font-family: 'Futura BT Heavy', serif;
+  font-weight: normal;
 }

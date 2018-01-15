@@ -33,34 +33,39 @@
 
   img {
     width: 100%;
-    max-width: 340px;
     margin-bottom: 2rem;
+    max-width: 275px;
+    @media #{$md-up} {
+      max-width: 340px;
+    }
   }
 
   h1 {
-    @extend .lasiver;
+    @extend .serif-bold;
     font-size: 30px;
-    letter-spacing: 0.3px;
+    letter-spacing: 2px;
+    color: color('blue');
     @media #{$md-up} {
       font-size: 50px;
     }
   }
 
   h2 {
-    @extend .futura;
+    @extend .sans-bold;
     font-size: 19px;
-    letter-spacing: 0.67px;
+    letter-spacing: 1.08px;
     margin-bottom: 2rem;
+    color: color('blue');
     @media #{$md-up} {
       font-size: 26px;
     }
   }
 
   h3 {
-    @extend .lasiver;
+    @extend .sans-medium;
     color: color('blue');
     font-size: 15px;
-    letter-spacing: 0.79px;
+    letter-spacing: 0.99px;
     line-height: 34px;
     @media #{$md-up} {
       font-size: 22px;
