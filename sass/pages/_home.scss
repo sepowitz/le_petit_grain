@@ -3,7 +3,7 @@
   height: 100%;
 
   .content {
-    padding: 4rem 0;
+    padding-top: 2rem;
     text-align: center;
     text-transform: uppercase;
     transition: 1.5s ease-in-out;
@@ -15,16 +15,39 @@
   }
 
   .title-wrapper {
-    margin-bottom: 2rem;
+    margin-bottom: 1.25rem;
+    @media #{$md-up} {
+      margin-bottom: 2rem;
+    }
   }
 
   .icons-wrapper {
-    margin-bottom: 2rem;
+    margin-bottom: 1.25rem;
+    @media #{$md-up} {
+      margin-bottom: 2rem;
+    }
   }
 
   .address-wrapper {
     display: block;
-    margin-bottom: 2rem;
+    margin-bottom: 1.25rem;
+    @media #{$md-up} {
+      margin-bottom: 2rem;
+    }
+  }
+
+  .coming-soon {
+    a {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    svg {
+      margin-left: 1rem;
+      width: 19px;
+      height: 19px;
+    }
   }
 
   a {
@@ -33,42 +56,44 @@
 
   img {
     width: 100%;
-    margin-bottom: 2rem;
-    max-width: 275px;
+    margin-bottom: 1rem;
+    max-width: 150px;
     @media #{$md-up} {
-      max-width: 340px;
+      margin-bottom: 2rem;
+      max-width: 275px;
     }
   }
 
   h1 {
     @extend .serif-bold;
-    font-size: 30px;
-    letter-spacing: 2px;
+    font-size: 26px;
+    letter-spacing: 1.6px;
     color: color('blue');
+    margin-bottom: 1rem;
     @media #{$md-up} {
-      font-size: 50px;
+      font-size: 40px;
+      margin-bottom: 2rem;
     }
   }
 
   h2 {
     @extend .sans-bold;
-    font-size: 19px;
-    letter-spacing: 1.08px;
-    margin-bottom: 2rem;
+    font-size: 16px;
+    letter-spacing: 1.06px;
     color: color('blue');
     @media #{$md-up} {
-      font-size: 26px;
+      font-size: 20px;
     }
   }
 
   h3 {
     @extend .sans-medium;
     color: color('blue');
-    font-size: 15px;
-    letter-spacing: 0.99px;
-    line-height: 34px;
+    font-size: 12px;
+    letter-spacing: 1.33px;
+    line-height: 21px;
     @media #{$md-up} {
-      font-size: 22px;
+      font-size: 14px;
     }
   }
 }
